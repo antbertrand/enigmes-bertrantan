@@ -29,14 +29,28 @@
       max-width: 100%;
       height: auto;
     }
+
+    .header {
+      text-align: center;
+      color: white;
+      margin-top: 30px;
+    }
+
+    .rotate {
+      transform: rotate(90deg); /* ou -90deg, 180deg, etc. */
+      display: block;
+      margin: 0 auto; /* centre horizontalement */
+    }
+
   </style>
 </head>
 <body>
-
-  <h1> Trouve la position précise, rends-toi y et demande si le nom de Bertrand y a laissé une trace... </h1>
-
+  <div class="header">
+    <h1>Trouve la position précise, rends-toi y et demande si le nom de Bertrand y a laissé une trace...</h1>
+  </div>
+  
   <!-- Image en pleine largeur -->
-  <img src="images/enigme-versailles.png" alt="Position précise">
+  <img src="images/enigme-versailles.png" alt="Position précise" class="rotate">
 
 </body>
 </html>
