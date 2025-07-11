@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Moulin</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #000; /* fond noir pour immersion */
+      font-family: Georgia, serif;
+      color: white;
+    }
+
+    .bloc {
+      width: 100vw;
+      max-width: 100%;
+    }
+
+    iframe {
+      display: block;
+      width: 100vw;
+      height: 56.25vw; /* ratio 16:9 */
+      border: none;
+    }
+
+    img {
+      display: block;
+      width: 100vw;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .header {
+      text-align: center;
+      color: white;
+      margin-top: 30px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    .lock-text {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .lock-link img {
+      width: 100px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+
+    .lock-link img:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Image en pleine largeur -->
+  <img src="images/carte_moulin.png" alt="Position précise">
+
+  <!-- Cadenas cliquable -->
+  <div class="footer">
+    <div class="lock-text">
+      <strong>Clique sur le cadenas pour déverrouiller la suite 🔓</strong>
+    </div>
+    <a href="https://lockee.fr/o/JwJ55XA2" class="lock-link">
+      <img src="images/cadenas.png" alt="Cadenas cliquable">
+    </a>
+  </div>
+</body>
+</html>
